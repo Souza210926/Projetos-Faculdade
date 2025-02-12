@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Produto</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="navbar show-menu">
+        <div class="header-inner-content">
+            <h1 class="logo"><span>Let's</span> Shop!</h1>
+            <nav>
+                <ul>
+                    <li> <a href="../Sistema E-commerce/pagina_inicial.html" style="color: white; text-decoration: none;">Início</a></li>
+                    <li>Sobre</li>
+                    <li>Contato</li>
+                    <li>Cadastrar Produto</li>
+                    <li><a href="../php/login.php" style="color: white; text-decoration: none;">Conta</a></li>
+
+                </ul>
+            </nav>
+            <div class="nav-icon-container">
+                <img src="../Sistema E-commerce/Imagens/cart.png">
+                <img src="../Sistema E-commerce/Imagens/menu.png" class="menu-button">
+            </div>
+        </div>
+    </div>
+    
+    <div class="wrapper">
+        <header>
+            <h1>Adicionar Novo Produto</h1>
+        </header>
+        
+    <form action="../php/add_product.php" method="POST">
+        <div class="input-box">
+            <input type="text" id="name" name="name" placeholder="Nome do Produto" required>
+        </div>
+        <div class="input-box">
+            <input id="descripition" name="descripition" placeholder="Descrição do produto" required></input>
+        </div>
+        <div class="input-box">
+            <input type="number" id="price" name="price" step="0.01" placeholder="Preço" required>
+        </div>
+        <div class="input-box">
+            <input type="number" id="quantity" name="quantity" placeholder="Quantidade" required>
+        </div>
+
+        <button class="btn-img" type="submit"><p>+ Adicionar Imagem</p></button><br><br>
+
+        <button class="btn" type="submit"><a href="../Sistema E-commerce/pagina_inicial.html" style="color: white; text-decoration: none" onclick="Entrar();">Cadastrar</a></button>
+        
+    </form>
+    </div>
+    
+    <footer class="grey-background">
+        <div class="page-inner-content footer-content">
+            <div class="download-options">
+                <p>Baixe a nosso app.</p>
+                <p>Baixe nosso app para Android e IOS</p>
+                <div>
+                    <img src="../Sistema E-commerce/Imagens/Google_Play_Store_badge_EN.svg.png" alt="">
+                    <img src="../Sistema E-commerce/Imagens/Download_on_the_App_Store_Badge.svg.png" alt="">
+                </div>
+            </div>
+
+            <div class="logo-footer">
+                <h1 class="logo"><span>Let's</span> Shop!</h1>
+                <p>Segurança e confiabilidade é nosso lema.</p>
+            </div>
+
+            <div class="links-footer">
+                <h3>Links úteis</h3>
+                <ul>
+                    <li>Cupons</li>
+                    <li>Blog Post</li>
+                    <li>Políticas</li>
+                    <li>Torne-se afiliado</li>
+                </ul>
+            </div>
+        </div>
+        <hr class="page-inner-content">
+
+        <div class="page-inner-content">
+            <p class="copyright">Copyright © 2024 - Let's Shop - Todos os Direitos Reservados</p>
+        </div>
+     </footer>
+</body>
+</html>
