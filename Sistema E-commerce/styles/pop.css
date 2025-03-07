@@ -1,0 +1,48 @@
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: red;
+    border: none;
+    color: white;
+    font-size: small;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkred;
+    transform: all 0.2s;
+}
+
+.resultado {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+.erro {
+    color: red;
+}
+
+.close-btn{
+    max-width: 100%;
+    background: red;
+    color: #fff;
+    padding: 10px 110px;
+    border-radius: 8px;
+    font-size: small;
+}
+
+.close-btn:hover{
+    background: darkred;
+    transform: all 0.2s;
+}
